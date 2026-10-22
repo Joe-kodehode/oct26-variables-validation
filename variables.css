@@ -1,0 +1,195 @@
+/* CSS Variables */
+
+:root {
+  /* color */
+  --primary-color: rgb(225, 0, 255);
+  --secondary-color: #53c77e;
+  --accent-color: #f59e0b;
+
+  --text-color: #222222;
+  --page-background: #f4f6f8;
+  --card-background: white;
+
+  /* spacing */
+  --small-space: 1rem;
+  --medium-space: 1.5rem;
+  --large-space: 2.5rem;
+
+  /* font-size */
+  --small-font: 1rem;
+  --medium-font: 1.5rem;
+  --large-font: 2.5rem;
+
+  /* border-radius */
+  --border-radius: 8px;
+}
+
+/* ========================= */
+/* GLOBAL                    */
+/* ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--page-background);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  background-color: #dbeafe;
+  padding: var(--large-space) 0;
+  margin-bottom: var(--medium-space);
+}
+
+header h1 {
+  margin-bottom: var(--small-space);
+}
+
+/* Section Styling */
+
+section {
+  background-color: var(--card-background);
+  border: 1px solid #dddddd;
+  padding: var(--medium-space);
+  margin-bottom: var(--medium-space);
+}
+
+section h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--small-space);
+}
+
+section p {
+  margin-bottom: var(--small-space);
+}
+
+/* Shared Examples */
+
+.example {
+  background-color: #eef2f7;
+  border: 1px solid #cbd5e1;
+  padding: var(--medium-space);
+}
+
+.box {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--medium-space);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.card-row {
+  display: flex;
+  gap: var(--medium-space);
+}
+
+.button-row {
+  display: flex;
+  gap: var(--medium-space);
+}
+
+/* Color Variables */
+.color-card {
+  width: 33%;
+  padding: var(--large-space);
+  color: white;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
+.primary-card {
+  background-color: var(--primary-color);
+}
+
+.secondary-card {
+  background-color: var(--secondary-color);
+}
+
+.accent-card {
+  background-color: var(--accent-color);
+}
+
+/* Spacing Variables */
+
+.spacing-box {
+  width: 33%;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.small-space {
+  padding: var(--small-space);
+}
+
+.medium-space {
+  padding: var(--medium-space);
+}
+
+.large-space {
+  padding: var(--large-space);
+}
+
+/* Font-size variables */
+.small-text {
+  font-size: var(--small-font);
+}
+
+.medium-text {
+  font-size: var(--medium-font);
+}
+
+.large-text {
+  font-size: var(--large-font);
+}
+
+/* Buttons */
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--small-space) var(--medium-space);
+  border-radius: var(--border-radius);
+}
+
+/* ========================= */
+/* FALLBACK                  */
+/* ========================= */
+
+.fallback-box {
+  background-color: var(--missing-color, orange);
+  color: white;
+  padding: var(--medium-space);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+/* ========================= */
+/* SUMMARY                   */
+/* ========================= */
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
